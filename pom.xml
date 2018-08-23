@@ -92,6 +92,10 @@
 			<classifier>jdk15</classifier>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
         <!--  cache -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
