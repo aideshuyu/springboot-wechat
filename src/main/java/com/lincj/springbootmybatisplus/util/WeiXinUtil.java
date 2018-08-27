@@ -25,11 +25,13 @@ public class WeiXinUtil {
     /**
      * 开发者id
      */
-    private static final String APPID = "wx421af0b0d8ac8359";
+//    private static final String APPID = "wx421af0b0d8ac8359";  //正式ID
+    private static final String APPID = "wx2c604dcca6b6491c"; //测试号ID
     /**
      * 开发者秘钥
      */
-    private static final String APPSECRET="4c026c0765c7bb904da0ce86ee4a1a39";
+//    private static final String APPSECRET="4c026c0765c7bb904da0ce86ee4a1a39"; //正式的秘钥
+    private static final String APPSECRET="153c043467cd6dfb3e384b885e887e16"; //测试号的秘钥
     private static final String ACCESS_TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?"
             + "grant_type=client_credential&appid=APPID&secret=APPSECRET";
     /**

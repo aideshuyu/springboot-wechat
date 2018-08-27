@@ -1,6 +1,7 @@
 package com.lincj.springbootmybatisplus.controller;
 
 import com.lincj.springbootmybatisplus.util.CheckUtil;
+import com.lincj.springbootmybatisplus.util.ImageMessageUtil;
 import com.lincj.springbootmybatisplus.util.MessageUtil;
 import com.lincj.springbootmybatisplus.util.TextMessageUtil;
 import org.springframework.stereotype.Controller;
@@ -55,7 +56,10 @@ public class LoginController {
         String message = null;
         //处理文本类型，实现输入1，恢复响应的封装内容
         if("text".equals(MsgType)){
-            if("1".equals(Content)){
+            if("图片".equals(Content)){
+                ImageMessageUtil util = new ImageMessageUtil();
+                message = util.initMessage(FromUserName , ToUserName);
+            }else{
                 TextMessageUtil textMessage = new TextMessageUtil();
                 message = textMessage.initMessage(FromUserName , ToUserName);
             }
