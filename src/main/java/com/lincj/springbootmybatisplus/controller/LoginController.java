@@ -1,9 +1,6 @@
 package com.lincj.springbootmybatisplus.controller;
 
-import com.lincj.springbootmybatisplus.util.CheckUtil;
-import com.lincj.springbootmybatisplus.util.ImageMessageUtil;
-import com.lincj.springbootmybatisplus.util.MessageUtil;
-import com.lincj.springbootmybatisplus.util.TextMessageUtil;
+import com.lincj.springbootmybatisplus.util.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -74,3 +71,4 @@ public class LoginController {
     }
 
 }
+
